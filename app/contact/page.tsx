@@ -47,10 +47,15 @@ export default function ContactPage() {
                 </li>
               </ul>
             </div>
-            <ContactForm />
-            <div style={{ marginTop: "40px" }}>
-  <GoogleMap />
-</div>
+                      <ContactForm />
+
+            <div 
+              className="lg:col-span-2" 
+              style={{ marginTop: "40px" }}
+            >
+              <GoogleMap />
+            </div>
+
           </div>
         </section>
       </main>

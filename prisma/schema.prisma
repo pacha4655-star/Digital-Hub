@@ -1,0 +1,69 @@
+// Digital Hub — database schema
+// Provider is Postgres because Vercel's serverless functions have an
+// ephemeral, read-only-by-default filesystem — SQLite would lose data
+// between requests. Any Postgres works: Vercel Postgres, Neon, Supabase, etc.
+// See README.md "Database setup" for a 2-minute setup guide.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum SubmissionType {
+  booking
+  newsletter
+}
+
+enum SubmissionStatus {
+  new
+  contacted
+  archived
+}
+
+model Submission {
+  id        String           @id @default(cuid())
+  type      SubmissionType
+  firstName String
+  lastName  String?
+  email     String
+  phone     String?
+  company   String?
+  service   String?
+  message   String?
+  source    String?
+  status    SubmissionStatus @default(new)
+  createdAt DateTime         @default(now())
+
+  @@index([type])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model Post {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  title       String
+  excerpt     String?
+  content     String
+  coverImage  String?
+  tag         String?
+  published   Boolean   @default(false)
+  authorName  String    @default("Digital Hub Team")
+  publishedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([published, publishedAt])
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  name         String   @default("Admin")
+  createdAt    DateTime @default(now())
+}

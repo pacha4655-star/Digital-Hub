@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import ContactForm from './ContactForm';
-
+import GoogleMap from '@/components/GoogleMap';
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'Get in touch with Digital Hub about a web development, SEO, paid media, or brand strategy project.',
@@ -48,6 +48,9 @@ export default function ContactPage() {
               </ul>
             </div>
             <ContactForm />
+            <div style={{ marginTop: "40px" }}>
+  <GoogleMap />
+</div>
           </div>
         </section>
       </main>

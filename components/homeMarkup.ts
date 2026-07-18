@@ -302,17 +302,17 @@ export const homeMarkup = `
   </div>
 </section>
 
-<!-- MAP -->
-<section class="section" style="padding-top:0;">
-  <div class="wrap">
-    <div class="map-box">
-      <div class="map-fallback">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Office location map — embed your Google Maps location here
-      </div>
-    </div>
-  </div>
-</section>
+<div class="map-box">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d579488.9057068515!2d79.91383845654097!3d13.039060141105539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1784396191929!5m2!1sen!2sin"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin">
+  </iframe>
+</div>
 
 </main>
 

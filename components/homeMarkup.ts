@@ -19,7 +19,7 @@ export const homeMarkup = `
   <div class="wrap nav-inner">
   <a href="/" class="logo">
   <img
-    src="/uploads/image.png"
+    src="/uploads/logo.png"
     alt="Digital Hub"
     style="height:60px; width:auto;"
   />
@@ -442,8 +442,6 @@ export const homeMarkup = `
     <svg class="ic ic-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"/></svg>
   </button>
 </div>
-
-<script src="auth.js"></script>
 
 
 <!-- ===== Backend integration: contact/booking form + newsletter signup ===== -->

@@ -17,14 +17,13 @@ export const homeMarkup = `
 <header id="navbar">
   <div id="navProgress"></div>
   <div class="wrap nav-inner">
-    <a href="#" class="logo">
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-        <circle cx="9" cy="9" r="6" fill="#6D28D9"/>
-        <path d="M4 22c0-6 4-9 9-9 6 0 12 3 13-4-1 9-7 15-13 15-5 0-9-1-9-2z" fill="url(#g1)"/>
-        <defs><linearGradient id="g1" x1="4" y1="9" x2="26" y2="28"><stop stop-color="#2563EB"/><stop offset="1" stop-color="#6D28D9"/></linearGradient></defs>
-      </svg>
-      Digital Hub
-    </a>
+  <a href="/" class="logo">
+  <img
+    src="/uploads/image.png"
+    alt="Digital Hub"
+    style="height:60px; width:auto;"
+  />
+</a>
     <nav class="nav-links" id="navLinks">
       <div class="nav-goo" id="navGoo">
         <div class="nav-blob nav-blob-trail" id="navBlobTrail"></div>

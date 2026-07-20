@@ -61,7 +61,7 @@ export const homeMarkup = `
         Log In
       </a>
       <a href="#contact" class="btn btn-primary btn-pill" style="padding:12px 24px; font-size:14px;">
-        Book Free Consultation
+        Free Consultation
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
@@ -82,8 +82,10 @@ export const homeMarkup = `
         Log In
       </a>
     </div>
-    <a href="#contact" class="btn btn-primary" style="width:100%;">Book Free Consultation</a>
-  </div>
+   <a
+  <a href="#contact" className="btn btn-primary btn-pill">
+  BookFree Consultation
+</a>
 </header>
 
 <main id="main">

@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     title: 'Digital Hub — Full-Service Digital Marketing Agency',
     description: 'Web development, SEO, paid ads, and brand strategy under one accountable team.',
   },
-  icons: {
-    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Ccircle cx='9' cy='9' r='6' fill='%236D28D9'/%3E%3Cpath d='M4 22c0-6 4-9 9-9 6 0 12 3 13-4-1 9-7 15-13 15-5 0-9-1-9-2z' fill='%232563EB'/%3E%3C/svg%3E",
-  },
+ icons: {
+  icon: "/uploads/logo.png",
+},
   robots: { index: true, follow: true },
 };
 

@@ -17,12 +17,30 @@ export const homeMarkup = `
 <header id="navbar">
   <div id="navProgress"></div>
   <div class="wrap nav-inner">
-  <a href="/" class="logo">
+ <a
+  href="/"
+  class="logo"
+  style="display:flex; align-items:center; gap:4px; text-decoration:none;"
+>
   <img
     src="/uploads/logo.png"
     alt="Digital Hub"
-    style="height:60px; width:auto;"
+    style="height:78px; width:auto;"
   />
+
+  <span
+  style="
+    display:inline-block;
+    font-size:28px;
+    font-weight:800;
+    color:#111827;
+    line-height:78px;
+    margin-left:6px;
+    white-space:nowrap;
+  "
+>
+  Digital Hub
+</span>
 </a>
     <nav class="nav-links" id="navLinks">
       <div class="nav-goo" id="navGoo">

@@ -82,10 +82,6 @@ export const homeMarkup = `
         Log In
       </a>
     </div>
-   <a
-  <a href="#contact" className="btn btn-primary btn-pill">
-  BookFree Consultation
-</a>
 </header>
 
 <main id="main">

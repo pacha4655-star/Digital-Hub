@@ -158,7 +158,12 @@
   }
   .nav-links.active a:not(:hover){color:var(--gray-800);}
   .nav-links a:hover{color:#fff;}
- .nav-cta{ display:flex; align-items:center; gap:12px; flex-shrink:0;}
+ .nav-cta{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    flex-shrink:0;
+}
   #mobileToggle{display:none; background:none; border:none; cursor:pointer; padding:6px; flex-shrink:0;}
   #mobileToggle svg{transition:transform .3s ease;}
   #mobileToggle.open svg{transform:rotate(90deg);}
@@ -870,15 +875,27 @@ body {
     white-space:nowrap;
     flex:0 0 auto;
 }
-#navAuthSlot{
-    display:none !important;
+.nav-cta{
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
-@media (max-width: 992px) {
-  .nav-cta {
-    display: none !important;
-  }
 
-  #mobileToggle {
-    display: flex !important;
-  }
+#mobileToggle{
+    display:none;
+}
+
+@media (max-width:900px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .nav-cta{
+        display:none;
+    }
+
+    #mobileToggle{
+        display:flex;
+    }
 }
